@@ -1,0 +1,21 @@
+# ローカル専用（同期しない）
+sessions/
+session-env/
+backups/
+cache/
+debug/
+telemetry/
+file-history/
+shell-snapshots/
+paste-cache/
+ide/
+projects/
+agent-memory/
+*.lock
+history.jsonl
+.credentials.json
+.last-cleanup
+.last-update-result.json
+mcp-needs-auth-cache.json
+settings.local.json
+plugins/
