@@ -171,6 +171,13 @@
       }
     ]
   },
+  "statusLine": {
+    "type": "command",
+    "command": "node \"C:\\Users\\itoh-\\.claude\\plugins\\cache\\sage\\sage\\0.10.0\\packages\\claude-code\\dist\\sage-statusline.cjs\""
+  },
+  "enabledPlugins": {
+    "sage@sage": true
+  },
   "extraKnownMarketplaces": {
     "claude-plugins-official": {
       "source": {
@@ -186,8 +193,5 @@
     }
   },
   "advisorModel": "opus",
-  "skipAutoPermissionPrompt": true,
-  "enabledPlugins": {
-    "sage@sage": true
-  }
+  "skipAutoPermissionPrompt": true
 }
