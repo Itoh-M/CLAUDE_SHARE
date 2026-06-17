@@ -1,23 +1,18 @@
 {
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_FLOW_V3_ENABLED": "true",
+    "CLAUDE_FLOW_HOOKS_ENABLED": "true"
+  },
   "permissions": {
-    "defaultMode": "auto",
     "allow": [
       "Bash(npx @claude-flow*)",
       "Bash(npx claude-flow*)",
       "Bash(node .claude/*)",
       "mcp__claude-flow__*"
-    ]
+    ],
+    "defaultMode": "auto"
   },
-  "extraKnownMarketplaces": {
-    "claude-plugins-official": {
-      "source": {
-        "source": "github",
-        "repo": "anthropics/claude-plugins-official"
-      }
-    }
-  },
-  "skipAutoPermissionPrompt": true,
-  "advisorModel": "opus",
   "hooks": {
     "PreToolUse": [
       {
@@ -176,9 +171,23 @@
       }
     ]
   },
-  "env": {
-    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
-    "CLAUDE_FLOW_V3_ENABLED": "true",
-    "CLAUDE_FLOW_HOOKS_ENABLED": "true"
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    },
+    "sage": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/gendigitalinc/sage.git"
+      }
+    }
+  },
+  "advisorModel": "opus",
+  "skipAutoPermissionPrompt": true,
+  "enabledPlugins": {
+    "sage@sage": true
   }
 }
